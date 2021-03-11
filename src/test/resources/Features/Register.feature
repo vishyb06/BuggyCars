@@ -13,5 +13,5 @@ Then I should be able to see home page
 
 Examples:
 |Login  |FirstName|LastName|Password   |ConfirmPassword|
-|User127|User     | 122    |Password01!|Password01!    |
+|Test128|test     | 128    |Password01!|Password01!    |
 

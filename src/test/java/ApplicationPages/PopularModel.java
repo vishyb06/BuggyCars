@@ -13,17 +13,26 @@ public class PopularModel extends UIBasePageFactory {
     @FindBy(xpath="//h4[normalize-space()='Specification']")
     public static WebElement specificationSection;
 
+    @FindBy(id="comment")
+    public static WebElement CommentTextBox;
 
-    @FindBy(xpath=" //a[normalize-space()='Model']")
-    public static WebElement vote;
-
-
-
+    @FindBy(xpath="//button[normalize-space()='Vote!']")
+    public static WebElement voteButton;
     //end UI Elements
+
+
 
    //start UI actions
    public static void popularModelClick(){
        PopularModelImg.click();
+    }
+
+    public static void enterComment(String comment){
+        CommentTextBox.sendKeys(comment);
+    }
+
+    public static void voteButtonClick(){
+        voteButton.click();
     }
 
 
