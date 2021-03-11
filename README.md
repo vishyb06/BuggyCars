@@ -1,9 +1,18 @@
+
 # BuggyCars Test automation  
 This repository contains browser automation tests for the BuggyCars 5 features
 
 ## Tools and Frameworks:
 1. Development IDE IntelliJ - V2020.3(Community Edition)
 2. Test Automation tools - Selenium Webdriver with Cucumber and Junit
+
+
+# BuggyCars Test automation  
+This repository contains browser automation tests for the BuggyCars with 5 features
+
+## Tools and Frameworks:
+1. Development IDE IntelliJ - V2020.3(Community Edition)
+2. Test Automation tools - Selenium Webdriver with Cucumber 
 3. Framework Stye - POM (Page object modal)
 4. Maven as build tool
 
@@ -12,6 +21,8 @@ This repository contains browser automation tests for the BuggyCars 5 features
 * Based on test environment specified in build profiles it will pick the environment and read reaspective properties files to fetch ulrs
 * Fancy reporting using net.masterthought plugin
 * Suppoert for multiple browsers and flxibility for extending it to cloud execution to e.g. Saucelabs, Bitbar etc. (This is work in progress)
+* Support for multiple browsers and flxibility for extending it to cloud execution 
+
 
 ## Pre-requisite:
 1. Maven - Development done with Apache Maven V3.6.3
@@ -25,6 +36,7 @@ This repository contains browser automation tests for the BuggyCars 5 features
 3. Install any git tool of your choice and clone the repositort to your local machine using comman `git clone <clone url>` 
 4. Execute maven command `mvn -Dcucumber.options="--tags <tagename>" clean test` (Use @KiwisaverCalculator in place of tagename) from command line e.g *GitBash*
 5. On successful execution this should generate `/target` folder under your local project repository
+
 
 ## Development 
 1. Clone code to your local using above instractions
@@ -40,7 +52,9 @@ This repository contains browser automation tests for the BuggyCars 5 features
 * In latest commit added support for cucumber reports
 * This allows uploading reports directly to cucumber cloud
 
+
 ## 3 critical bugs
 1. Unable to go Home page from Popular Make Page and also from 
 2. Author column value is empty in the Popular Model page
 3. Lancia Car model details missing when click on Lancia from overall rating page
+
