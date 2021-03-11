@@ -36,7 +36,7 @@ This repository contains browser automation tests for the BuggyCars with 5 featu
 3. Install any git tool of your choice and clone the repository to your local machine using comman `git clone <clone url>` 
 4. Execute maven command `mvn -Dcucumber.options="--tags <tagename>" clean test` (Use @BuggyCarsRatingTest in place of tag name) from command line e.g *GitBash*
 5. On successful execution this should generate `/target` folder under your local project repository
-
+e.g. mvn test -Dcucumber.option="--tags @BuggyCarsRatingTest"
 
 ## Development 
 1. Clone code to your local using above instructions
@@ -46,11 +46,6 @@ This repository contains browser automation tests for the BuggyCars with 5 featu
 ### Notes:
 1. Code is written and tested on Windows10 machine
 2. Tested with Chrome browser (Framework has provision for Edge and Firefox but testing needs to be done)
-
-
-## Cucumber Reports
-* In latest commit added support for cucumber reports
-
 
 
 ## 3 critical bugs

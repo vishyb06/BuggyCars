@@ -11,7 +11,7 @@ Feature: Register and Login to BuggyCars
 
     Examples:
       |Login  |FirstName|LastName|Password   |ConfirmPassword|
-      |Test138|test     | 134    |Password01!|Password01!    |
+      |Test140|test     | 134    |Password01!|Password01!    |
 
 
 
@@ -23,7 +23,7 @@ Feature: Register and Login to BuggyCars
 
     Examples:
       |Login  |Password   |
-      |Test138|Password01!|
+      |Test140|Password01!|
 
 
   Scenario Outline: User should be able to see Popular make with login
@@ -35,7 +35,7 @@ Feature: Register and Login to BuggyCars
 
     Examples:
       |UserName| Password |
-      |Test138|Password01! |
+      |Test140|Password01! |
 
 
 
@@ -47,7 +47,7 @@ Feature: Register and Login to BuggyCars
 
     Examples:
       |UserName| Password |
-      |Test138|Password01! |
+      |Test140|Password01! |
 
 
   Scenario Outline: login with User and vote car rating with comments
@@ -62,4 +62,4 @@ Feature: Register and Login to BuggyCars
 
     Examples:
       |UserName| Password |Comment|
-      |Test138|Password01!| Test  |
+      |Test140|Password01!| Test  |
