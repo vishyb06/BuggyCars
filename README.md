@@ -12,7 +12,7 @@ This repository contains browser automation tests for the BuggyCars with 5 featu
 * Flexibility to configure test environment using build profiles
 * Based on test environment specified in build profiles it will pick the environment and read reaspective properties files to fetch ulrs
 * Fancy reporting using net.masterthought plugin
-* Suppoert for multiple browsers and flxibility for extending it to cloud execution 
+* Support for multiple browsers and flxibility for extending it to cloud execution 
 
 ## Pre-requisite:
 1. Maven - Development done with Apache Maven V3.6.3
