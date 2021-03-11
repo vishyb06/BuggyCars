@@ -1,6 +1,7 @@
 package ApplicationPages;
 
 import Common.UIBasePageFactory;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -13,30 +14,66 @@ public class PopularModel extends UIBasePageFactory {
     @FindBy(xpath="//h4[normalize-space()='Specification']")
     public static WebElement specificationSection;
 
-    @FindBy(id="comment")
-    public static WebElement CommentTextBox;
+    @FindBy(xpath="//th[normalize-space()='Date']")
+    public static WebElement date;
 
-    @FindBy(xpath="//button[normalize-space()='Vote!']")
-    public static WebElement voteButton;
-    //end UI Elements
+    @FindBy(xpath="//th[normalize-space()='Author']")
+    public static WebElement author;
 
+    @FindBy(xpath="//th[normalize-space()='Comment']")
+    public static WebElement comment;
 
-
-   //start UI actions
-   public static void popularModelClick(){
-       PopularModelImg.click();
+    //start UI actions
+    public static void popularModelClick(){
+        PopularModelImg.click();
     }
 
-    public static void enterComment(String comment){
-        CommentTextBox.sendKeys(comment);
+    public boolean isSpecificationSectionDisplayed() {
+        try {
+            return specificationSection.isDisplayed();
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+            return false;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
-    public static void voteButtonClick(){
-        voteButton.click();
+    public boolean isDateDisplayed() {
+        try {
+            return date.isDisplayed();
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+            return false;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean isAuthorDisplayed() {
+        try {
+            return author.isDisplayed();
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+            return false;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean isCommentDisplayed() {
+        try {
+            return comment.isDisplayed();
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+            return false;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
 
-    //end UI actions
+
 
 }
 

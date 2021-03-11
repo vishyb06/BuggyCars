@@ -39,8 +39,8 @@ public class LoginStepDef extends UIBasePageFactory {
     }
 
     @Then("I should be able to see home page")
-    public void iShouldBeAbleToSeeHomePage() {
+    public void iShouldBeAbleToSeeHomePage() throws InterruptedException {
+        Thread.sleep(3000);
         Assert.assertTrue("Home page is displayed",loginPage.isHomePageDisplayed());
-        Assert.assertTrue( "profile is displayed",loginPage.isProfileDisplayed());
     }
 }

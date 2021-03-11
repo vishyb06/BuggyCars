@@ -16,11 +16,6 @@ public class PopularMakeStepDef extends UIBasePageFactory {
         Thread.sleep(3000);
     }
 
-    @And("I can see list of Popular model cars with rank and votes")
-    public void iCanSeeListOfPopularModelCarsWithRankAndVotes() {
-
-    }
-
     @And("I click on Next page")
     public void iClickOnNextPage() throws InterruptedException {
         popularMake.clickOnNextPage();

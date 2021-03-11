@@ -1,6 +1,6 @@
 
 # BuggyCars Test automation  
-This repository contains browser automation tests for the BuggyCars 5 features
+This repository contains browser automation test for the BuggyCarsRating feature file with 5 scenarios
 
 ## Tools and Frameworks:
 1. Development IDE IntelliJ - V2020.3(Community Edition)
@@ -33,28 +33,28 @@ This repository contains browser automation tests for the BuggyCars with 5 featu
 1. Install Java (*JDK 1.8*) and add JAVA_HOME and add it to your windows environment variable (test your installation using `java -version` command)
 2. Install maven locally and add it your windows environment variable (test your installation using `mvn -version` command) - 
    Please refer this for [reference] (https://howtodoinjava.com/maven/how-to-install-maven-on-windows/)
-3. Install any git tool of your choice and clone the repositort to your local machine using comman `git clone <clone url>` 
-4. Execute maven command `mvn -Dcucumber.options="--tags <tagename>" clean test` (Use @KiwisaverCalculator in place of tagename) from command line e.g *GitBash*
+3. Install any git tool of your choice and clone the repository to your local machine using comman `git clone <clone url>` 
+4. Execute maven command `mvn -Dcucumber.options="--tags <tagename>" clean test` (Use @BuggyCarsRatingTest in place of tag name) from command line e.g *GitBash*
 5. On successful execution this should generate `/target` folder under your local project repository
 
 
 ## Development 
-1. Clone code to your local using above instractions
-2. Configure Maven, Jave and Git as per above instructions
-3. Open proejct in IntelliJ IDE - This should resolve dependencies by iteself
+1. Clone code to your local using above instructions
+2. Configure Maven, Java and Git as per above instructions
+3. Open project in IntelliJ IDE - This should resolve dependencies by itself
 
 ### Notes:
 1. Code is written and tested on Windows10 machine
-2. Tested with chrome browser (Framework has provision for Edge and Firefox but testing needs to be done)
+2. Tested with Chrome browser (Framework has provision for Edge and Firefox but testing needs to be done)
 
 
 ## Cucumber Reports
 * In latest commit added support for cucumber reports
-* This allows uploading reports directly to cucumber cloud
+
 
 
 ## 3 critical bugs
-1. Unable to go Home page from Popular Make Page and also from 
+1. Unable to go Home Page from Popular Make Page 
 2. Author column value is empty in the Popular Model page
 3. Lancia Car model details missing when click on Lancia from overall rating page
 
