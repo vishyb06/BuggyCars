@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 42) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>BuggyCars</td>
+              <td>42</td>
+            <td>12 Mar 2021, 11:44</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">Runner.TestHooks.TearDown(io.cucumber.java.Scenario)</td>
+              <td>5</td>
+              <td class="duration" data-value="6564050100">6s 564ms</td>
+              <td class="duration" data-value="1312810020">1s 312ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.LoginStepDef.iClickOnLoginButton()</td>
+              <td>3</td>
+              <td class="duration" data-value="19497170600">19s 497ms</td>
+              <td class="duration" data-value="6499056866">6s 499ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.LoginStepDef.iEnterValidCredentialsForLoginWith(java.lang.String,java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="1623843800">1s 623ms</td>
+              <td class="duration" data-value="405960950">405ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.LoginStepDef.iOpenBuggyCarsHomePage()</td>
+              <td>5</td>
+              <td class="duration" data-value="78220650400">1m 18s 220ms</td>
+              <td class="duration" data-value="15644130080">15s 644ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.LoginStepDef.iShouldBeAbleToSeeHomePage()</td>
+              <td>2</td>
+              <td class="duration" data-value="6107053600">6s 107ms</td>
+              <td class="duration" data-value="3053526800">3s 053ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.OverallRatingStepDef.iClickOnOverallRatingImage()</td>
+              <td>1</td>
+              <td class="duration" data-value="11242121500">11s 242ms</td>
+              <td class="duration" data-value="11242121500">11s 242ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.OverallRatingStepDef.iClickOnVoteButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="8113172200">8s 113ms</td>
+              <td class="duration" data-value="8113172200">8s 113ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.OverallRatingStepDef.iEnterDetailsFor(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="471101700">471ms</td>
+              <td class="duration" data-value="471101700">471ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.OverallRatingStepDef.iSelectACarForVoting()</td>
+              <td>1</td>
+              <td class="duration" data-value="8365869700">8s 365ms</td>
+              <td class="duration" data-value="8365869700">8s 365ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.PopularMakeStepDef.iClickOnNextPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="8177219100">8s 177ms</td>
+              <td class="duration" data-value="8177219100">8s 177ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.PopularMakeStepDef.iClickOnPopularMakeImage()</td>
+              <td>1</td>
+              <td class="duration" data-value="8208635500">8s 208ms</td>
+              <td class="duration" data-value="8208635500">8s 208ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.PopularModelStepDef.iCanSeePopularModelCarDetails()</td>
+              <td>1</td>
+              <td class="duration" data-value="3731650800">3s 731ms</td>
+              <td class="duration" data-value="3731650800">3s 731ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.PopularModelStepDef.iClickOnPopularModelImage()</td>
+              <td>1</td>
+              <td class="duration" data-value="8583247700">8s 583ms</td>
+              <td class="duration" data-value="8583247700">8s 583ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.RegisterStepdef.iClickOnRegisterButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="5090426500">5s 090ms</td>
+              <td class="duration" data-value="5090426500">5s 090ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.RegisterStepdef.iClickOnRegisterButtonOnHomePage()</td>
+              <td>1</td>
+              <td class="duration" data-value="5262498700">5s 262ms</td>
+              <td class="duration" data-value="5262498700">5s 262ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.RegisterStepdef.iEnterRegistrationDetailsWithAndAndAndAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="641470400">641ms</td>
+              <td class="duration" data-value="641470400">641ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.RegisterStepdef.iShouldBeAbleToRegister()</td>
+              <td>1</td>
+              <td class="duration" data-value="1002202200">1s 002ms</td>
+              <td class="duration" data-value="1002202200">1s 002ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>17</td>
+            <td>31</td>
+            <td class="duration">3m 902ms</td>
+            <td class="duration">5s 835ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
