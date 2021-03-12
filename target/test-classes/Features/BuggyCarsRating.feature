@@ -11,7 +11,7 @@ Feature: Register and Login to BuggyCars
 
     Examples:
       |Login  |FirstName|LastName|Password   |ConfirmPassword|
-      |Test141|test     | 134    |Password01!|Password01!    |
+      |Test142|test     | 142    |Password01!|Password01!    |
 
 
 
@@ -23,36 +23,36 @@ Feature: Register and Login to BuggyCars
 
     Examples:
       |Login  |Password   |
-      |Test141|Password01!|
+      |Test142|Password01!|
 
 
   Scenario Outline: User should be able to see Popular make with login
     Given I open BuggyCars home page
-    When I enter valid credentials for login with "<UserName>" and "<Password>"
+    When I enter valid credentials for login with "<Login>" and "<Password>"
     And I click on Login button
     And I click on Popular Make image
     And I click on Next page
 
     Examples:
-      |UserName| Password |
-      |Test141|Password01! |
+      |Login| Password |
+      |Test142|Password01! |
 
 
 
   Scenario Outline: User should be able to see Popular model with login
     Given I open BuggyCars home page
-    When I enter valid credentials for login with "<UserName>" and "<Password>"
+    When I enter valid credentials for login with "<Login>" and "<Password>"
     And I click on Popular Model image
     And I can see Popular model car details
 
     Examples:
-      |UserName| Password |
-      |Test141|Password01! |
+      |Login| Password |
+      |Test142|Password01! |
 
 
   Scenario Outline: login with User and vote car rating with comments
     Given I open BuggyCars home page
-    When I enter valid credentials for login with "<UserName>" and "<Password>"
+    When I enter valid credentials for login with "<Login>" and "<Password>"
     And I click on Login button
     And I click on Overall Rating image
     And I select a Car for voting
@@ -61,5 +61,5 @@ Feature: Register and Login to BuggyCars
  
 
     Examples:
-      |UserName| Password |Comment|
-      |Test141|Password01!| Test  |
+      |Login| Password |Comment|
+      |Test142|Password01!| Test  |

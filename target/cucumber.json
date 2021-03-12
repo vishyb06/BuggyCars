@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-11T22:41:27.448Z",
+        "start_timestamp": "2021-03-11T23:11:00.914Z",
         "line": 14,
         "name": "User should be able to Register successfully",
         "description": "",
@@ -11,7 +11,7 @@
         "after": [
           {
             "result": {
-              "duration": 1324475700,
+              "duration": 1558971400,
               "status": "passed"
             },
             "match": {
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17490045300,
+              "duration": 22769192600,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 5262498700,
+              "duration": 5226631200,
               "status": "passed"
             },
             "line": 6,
@@ -48,15 +48,15 @@
           },
           {
             "result": {
-              "duration": 641470400,
+              "duration": 889980900,
               "status": "passed"
             },
             "line": 7,
-            "name": "I enter Registration details with \"Test141\" and \"test\" and  \"134\" and \"Password01!\" and \"Password01!\"",
+            "name": "I enter Registration details with \"Test142\" and \"test\" and  \"142\" and \"Password01!\" and \"Password01!\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Test141\"",
+                  "val": "\"Test142\"",
                   "offset": 34
                 },
                 {
@@ -64,7 +64,7 @@
                   "offset": 48
                 },
                 {
-                  "val": "\"134\"",
+                  "val": "\"142\"",
                   "offset": 60
                 },
                 {
@@ -82,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 5090426500,
+              "duration": 5118675600,
               "status": "passed"
             },
             "line": 8,
@@ -94,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 1002202200,
+              "duration": 776853200,
               "status": "passed"
             },
             "line": 9,
@@ -106,7 +106,7 @@
           },
           {
             "result": {
-              "duration": 3058625200,
+              "duration": 3092125800,
               "status": "passed"
             },
             "line": 10,
@@ -124,7 +124,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-11T22:42:01.537Z",
+        "start_timestamp": "2021-03-11T23:11:40.541Z",
         "line": 26,
         "name": "User should be able to login successfully with valid credentials",
         "description": "",
@@ -132,7 +132,7 @@
         "after": [
           {
             "result": {
-              "duration": 1291799100,
+              "duration": 1307968200,
               "status": "passed"
             },
             "match": {
@@ -145,7 +145,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14372237000,
+              "duration": 14826856700,
               "status": "passed"
             },
             "line": 19,
@@ -157,15 +157,15 @@
           },
           {
             "result": {
-              "duration": 371754900,
+              "duration": 501636600,
               "status": "passed"
             },
             "line": 20,
-            "name": "I enter valid credentials for login with \"Test141\" and \"Password01!\"",
+            "name": "I enter valid credentials for login with \"Test142\" and \"Password01!\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Test141\"",
+                  "val": "\"Test142\"",
                   "offset": 41
                 },
                 {
@@ -179,7 +179,7 @@
           },
           {
             "result": {
-              "duration": 3232314300,
+              "duration": 4071079900,
               "status": "passed"
             },
             "line": 21,
@@ -191,7 +191,7 @@
           },
           {
             "result": {
-              "duration": 3048428400,
+              "duration": 3057565700,
               "status": "passed"
             },
             "line": 22,
@@ -209,7 +209,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-11T22:42:23.887Z",
+        "start_timestamp": "2021-03-11T23:12:04.342Z",
         "line": 38,
         "name": "User should be able to see Popular make with login",
         "description": "",
@@ -217,7 +217,7 @@
         "after": [
           {
             "result": {
-              "duration": 1258650400,
+              "duration": 1639166200,
               "status": "passed"
             },
             "match": {
@@ -230,7 +230,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15740506800,
+              "duration": 15093462000,
               "status": "passed"
             },
             "line": 30,
@@ -242,15 +242,15 @@
           },
           {
             "result": {
-              "duration": 519359500,
+              "duration": 532184000,
               "status": "passed"
             },
             "line": 31,
-            "name": "I enter valid credentials for login with \"Test141\" and \"Password01!\"",
+            "name": "I enter valid credentials for login with \"Test142\" and \"Password01!\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Test141\"",
+                  "val": "\"Test142\"",
                   "offset": 41
                 },
                 {
@@ -264,7 +264,7 @@
           },
           {
             "result": {
-              "duration": 8154535700,
+              "duration": 8159447200,
               "status": "passed"
             },
             "line": 32,
@@ -276,7 +276,7 @@
           },
           {
             "result": {
-              "duration": 8208635500,
+              "duration": 5217523500,
               "status": "passed"
             },
             "line": 33,
@@ -288,7 +288,7 @@
           },
           {
             "result": {
-              "duration": 8177219100,
+              "duration": 8158775100,
               "status": "passed"
             },
             "line": 34,
@@ -306,7 +306,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-11T22:43:05.976Z",
+        "start_timestamp": "2021-03-11T23:12:43.172Z",
         "line": 50,
         "name": "User should be able to see Popular model with login",
         "description": "",
@@ -314,7 +314,7 @@
         "after": [
           {
             "result": {
-              "duration": 1352302900,
+              "duration": 1442389900,
               "status": "passed"
             },
             "match": {
@@ -327,7 +327,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15555579200,
+              "duration": 15554542400,
               "status": "passed"
             },
             "line": 43,
@@ -339,15 +339,15 @@
           },
           {
             "result": {
-              "duration": 381021500,
+              "duration": 1221646600,
               "status": "passed"
             },
             "line": 44,
-            "name": "I enter valid credentials for login with \"Test141\" and \"Password01!\"",
+            "name": "I enter valid credentials for login with \"Test142\" and \"Password01!\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Test141\"",
+                  "val": "\"Test142\"",
                   "offset": 41
                 },
                 {
@@ -361,7 +361,7 @@
           },
           {
             "result": {
-              "duration": 8583247700,
+              "duration": 8346621700,
               "status": "passed"
             },
             "line": 45,
@@ -373,7 +373,7 @@
           },
           {
             "result": {
-              "duration": 3731650800,
+              "duration": 3985472900,
               "status": "passed"
             },
             "line": 46,
@@ -391,7 +391,7 @@
         ]
       },
       {
-        "start_timestamp": "2021-03-11T22:43:35.610Z",
+        "start_timestamp": "2021-03-11T23:13:13.754Z",
         "line": 65,
         "name": "login with User and vote car rating with comments",
         "description": "",
@@ -399,7 +399,7 @@
         "after": [
           {
             "result": {
-              "duration": 1336822000,
+              "duration": 1416732800,
               "status": "passed"
             },
             "match": {
@@ -412,7 +412,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15062282100,
+              "duration": 16957440900,
               "status": "passed"
             },
             "line": 54,
@@ -424,15 +424,15 @@
           },
           {
             "result": {
-              "duration": 351707900,
+              "duration": 562772900,
               "status": "passed"
             },
             "line": 55,
-            "name": "I enter valid credentials for login with \"Test141\" and \"Password01!\"",
+            "name": "I enter valid credentials for login with \"Test142\" and \"Password01!\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Test141\"",
+                  "val": "\"Test142\"",
                   "offset": 41
                 },
                 {
@@ -446,7 +446,7 @@
           },
           {
             "result": {
-              "duration": 8110320600,
+              "duration": 8288608900,
               "status": "passed"
             },
             "line": 56,
@@ -458,7 +458,7 @@
           },
           {
             "result": {
-              "duration": 11242121500,
+              "duration": 11627966800,
               "status": "passed"
             },
             "line": 57,
@@ -470,7 +470,7 @@
           },
           {
             "result": {
-              "duration": 8365869700,
+              "duration": 8274648800,
               "status": "passed"
             },
             "line": 58,
@@ -482,7 +482,7 @@
           },
           {
             "result": {
-              "duration": 471101700,
+              "duration": 620185200,
               "status": "passed"
             },
             "line": 59,
@@ -500,7 +500,7 @@
           },
           {
             "result": {
-              "duration": 8113172200,
+              "duration": 8112609200,
               "status": "passed"
             },
             "line": 60,
