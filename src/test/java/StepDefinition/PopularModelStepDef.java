@@ -3,6 +3,7 @@ package StepDefinition;
 import ApplicationPages.PopularMake;
 import ApplicationPages.PopularModel;
 import Common.UIBasePageFactory;
+import Common.WaitHelper;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
@@ -15,13 +16,13 @@ public class PopularModelStepDef extends UIBasePageFactory {
     @And("I click on Popular Model image")
     public void iClickOnPopularModelImage() throws InterruptedException {
         PopularModel.popularModelClick();
-        Thread.sleep(3000);
+        WaitHelper.waitPageForLoad();
     }
 
 
     @And("I can see Popular model car details")
     public void iCanSeePopularModelCarDetails()  throws InterruptedException {
-        Thread.sleep(3000);
+        WaitHelper.waitPageForLoad();
         Assert.assertTrue("Specification section is displayed",popularModel.isSpecificationSectionDisplayed());
         Assert.assertTrue("Date Column is displayed",popularModel.isDateDisplayed());
         Assert.assertTrue("Author Column is displayed",popularModel.isAuthorDisplayed());

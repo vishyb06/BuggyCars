@@ -2,6 +2,7 @@ package StepDefinition;
 
 import ApplicationPages.PopularMake;
 import Common.UIBasePageFactory;
+import Common.WaitHelper;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
 import org.apache.logging.log4j.LogManager;
@@ -13,12 +14,12 @@ public class PopularMakeStepDef extends UIBasePageFactory {
     @When("I click on Popular Make image")
     public void iClickOnPopularMakeImage() throws InterruptedException {
         PopularMake.popularMakeClick();
-        Thread.sleep(3000);
+        WaitHelper.waitPageForLoad();
     }
 
     @And("I click on Next page")
     public void iClickOnNextPage() throws InterruptedException {
         popularMake.clickOnNextPage();
-        Thread.sleep(3000);
+        WaitHelper.waitPageForLoad();
     }
 }

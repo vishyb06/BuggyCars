@@ -1,7 +1,7 @@
 package StepDefinition;
 
-import ApplicationPages.LoginPage;
 import Common.UIBasePageFactory;
+import Common.WaitHelper;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -35,12 +35,12 @@ public class LoginStepDef extends UIBasePageFactory {
     @And("I click on Login button")
     public void iClickOnLoginButton() throws InterruptedException {
         loginPage.LoginClick();
-        Thread.sleep(3000);
+        WaitHelper.waitForElementVisibility(loginPage.loginButton);
     }
 
     @Then("I should be able to see home page")
     public void iShouldBeAbleToSeeHomePage() throws InterruptedException {
-        Thread.sleep(3000);
+        WaitHelper.waitPageForLoad();
         Assert.assertTrue("Home page is displayed",loginPage.isHomePageDisplayed());
     }
 }
